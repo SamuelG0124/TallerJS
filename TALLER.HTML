@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller</title>
+</head>
+<body>
+
+
+    <h2>Calculadora de velocidades</h2>
+    <form action="">
+        <label for="km">Velocidad en KM/HORA:</label>
+        <input type="text" id="km" placeholder="Ingrese la velocidad">
+    
+        <br><br>
+    
+        <label for="operacion">Operación</label>
+        <select id="operacion">
+            <option value="0">Seleccione</option>
+            <option value="1">KM a MTS</option>
+            <option value="2">KM a MILLAS</option>
+        </select>
+    
+        <br><br>
+        <button type="button" onclick="convertir()">Calcular</button>
+    </form>
+
+    <script src="/JS/Velocidades.JS"></script>
+    
+    <p id="resultado"></p>
+
+
+    <h2>Llamadas</h2>
+
+    <form action="">
+        <label for="duracion">Duración llamada:</label>
+        <input type="text" id="duracion" placeholder="Ingresa los minutos utilizados">
+        <br><br>
+        <button type="button" onclick="valor()">Valor</button>
+    </form>
+
+    <script src="/JS/Llamadas.js"></script>
+    
+    <p id="costo"></p>
+
+
+    <h2>IMC</h2>
+
+    <form action="">
+
+        <label for="kg">Peso en KG (EJ:76):</label>
+        <input type="text" name="" id="kg"placeholder="Ingrese su peso en KG">
+
+        <br><br>
+        <label for="mts">Altura en MTS (EJ: 1.80):</label>
+        <input type="text" name="" id="mts"placeholder="Ingrese altura en mts">
+
+        <br><br>
+
+        <button type="button" onclick="IMC()">Calcular IMC</button>
+
+    
+
+    </form>
+
+    <script src="/JS/IMC.JS"></script>
+
+    <p id="mostrar"></p>
+
+
+
+    <h2>Conversor de temperatura</h2>
+
+    <form action="">
+        <label for="temperatura">Temperatura:</label>
+        <input type="text" name="" id="temperatura" placeholder="Ingrese la temperatura">
+
+    <br><br>
+    <select id="opciones">
+        <option value="0">Seleccionar</option>
+        <option value="1">Celsius a Fahrenheit </option>
+        <option value="2">Fahrenheit a Celsius</option>
+    </select>
+
+    <br><br>
+    <button type="button" onclick="temp()">Convertir temperatura</button>
+
+    </form>
+
+    <script src="/JS/TEMPERATURAS.JS"></script>
+
+    <p id="texto"></p>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
